@@ -1,0 +1,35 @@
+:root{
+  --text: #f4f2f0;
+  --background: #c2c5aa;
+  --primary: #a4ac86;
+  --secondary: #656d4a;
+  --accent: #414833;
+  --secondaryaccent: #333d29;
+}
+
+.FrameHead {
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px 10px 10px 10px;
+}
+
+.FrameImage {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.FrameText1 {
+  font-size: 30px;
+  text-shadow: 2px 2px black;
+}
+
+.FrameText2 {
+  font-size: 12px;
+  text-shadow: 2px 2px black;
+}
+

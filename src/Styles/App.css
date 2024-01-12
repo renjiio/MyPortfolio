@@ -1,0 +1,70 @@
+:root{
+  --text: #f4f2f0;
+  --background: #c2c5aa;
+  --primary: #a4ac86;
+  --secondary: #656d4a;
+  --accent: #414833;
+  --secondaryaccent: #333d29;
+}
+
+.MyWork {
+  border-top: 1px solid #f4f2f0;
+  border-bottom: 1px solid #f4f2f0;
+  margin: 80px;
+  text-align: center
+}
+
+p {
+  font-size: 20px;
+}
+h4 {
+  font-size: 80px;
+}
+
+.MeText {
+  padding: 100px;
+  background-color: var( --primary);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--background);
+  margin: 0; /* Remove default body margin */
+}
+
+*{
+  font-family: 'Source Code Pro', monospace;
+}
+
+main {
+  font-size: 100px;
+  color: var(--text);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.myName {
+  text-align: center;
+  border: solid;
+  border-color: var(--secondaryaccent);
+  background-color: var(--secondaryaccent);
+}
+
+.Frame {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.PC {
+  display: flex;
+  justify-content: cneter;
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+}
