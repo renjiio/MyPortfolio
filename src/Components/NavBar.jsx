@@ -1,16 +1,13 @@
-import { useRef,useEffect, Component } from 'react';
-import link from 'react-scroll'
+import { useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import "../Styles/NavBar.css";
 import mmlogo from '../Images/m&mlogo.png';
-const ScrollLink = Scroll.ScrollLink
 
 function NavBar() {
   const navRef = useRef();
 
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
-
   }
   
   return (
@@ -18,9 +15,7 @@ function NavBar() {
       <img className="logopng" src={mmlogo} />
       <nav ref={navRef}>
         <a href="/">Home</a>
-        
-        <Link to="MyWork" spy={true} smooth={true} offset={50} duration={500}>My Work</Link>
-        
+        <a href="MyWork">My Work</a>
         <a href="/#">Contact</a>
         <a href="/#">About Me</a>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
