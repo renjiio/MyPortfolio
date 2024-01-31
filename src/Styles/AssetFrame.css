@@ -1,0 +1,57 @@
+:root {
+    --text: #f4f2f0;
+    --background: #1e1e1e;
+    --primary: #7f8760;
+    --secondary: #656d4a;
+    --accent: #414833;
+    --secondaryaccent: #57604e;
+  }
+  
+  .AssetImage:hover {
+    transform: scale(1.1);
+  }
+  
+  .AssetHead {
+    display: flex; /* Use flex display to position items in a row */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 8px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .AssetImage {
+    font-size: 30px;
+    padding: 30px;
+    padding-right: 350px;
+    max-width: 300px;
+  }
+  
+  .AssetContainer {
+    font-size: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column; /* Display text elements in a column */
+    padding-top: 30px;
+  }
+  
+  
+  .AssetText1 {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .AssetText2 {
+    font-size: 20px;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .AssetHead {
+      flex-direction: column;
+    }
+    
+    }
+  
+  

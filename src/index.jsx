@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import App from './Pages/App';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Plague from './Pages/Plague';
 
 const theme = createTheme({
   breakpoints: {
@@ -15,15 +19,22 @@ const theme = createTheme({
   },
 });
 
-ReactDOM.render(
+const router = createBrowserRouter([
+  {
+  path: "/",
+  element: <App />,
+  },
+  {
+  path: "/Plague",
+  element: <Plague />,
+  },
+  ]);
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<App />} />
-        </Routes>
-      </Router>
+      <RouterProvider router={router} />
     </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

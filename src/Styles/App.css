@@ -1,17 +1,74 @@
 :root{
   --text: #f4f2f0;
-  --background: #c2c5aa;
+  --background: #333d28;
   --primary: #a4ac86;
   --secondary: #656d4a;
   --accent: #414833;
-  --secondaryaccent: #333d29;
+  --secondaryaccent: #57604e;
 }
 
 .MyWork {
   border-top: 1px solid #f4f2f0;
   border-bottom: 1px solid #f4f2f0;
   margin: 80px;
-  text-align: center
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.MyWork p {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text);
+  padding: 20px;
+  background-color: var(--primary);
+}
+
+.AboutMe {
+  border-top: 1px solid #f4f2f0;
+  border-bottom: 1px solid #f4f2f0;
+  margin: 80px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.AboutMe p {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text);
+  padding: 20px;
+  background-color: var(--secondary);
+}
+
+.Comment {
+  border-top: 1px solid #f4f2f0;
+  border-bottom: 1px solid #f4f2f0;
+  margin: 80px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Comment p {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text);
+  padding: 20px;
+  background-color: var(--secondary);
+}
+
+.Contact {
+  border-top: 1px solid #f4f2f0;
+  border-bottom: 1px solid #f4f2f0;
+  margin: 80px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Contact p {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text);
+  padding: 20px;
+  background-color: var(--secondaryaccent);
 }
 
 p {
@@ -22,8 +79,20 @@ h4 {
 }
 
 .MeText {
-  padding: 100px;
-  background-color: var( --primary);
+  padding: 50px;
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Career {
+  padding: 50px;
+  background-color: var(--accent);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Interests {
+  padding: 50px;
+  background-color: var(--secondaryaccent);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -60,11 +129,129 @@ main {
 
 .PC {
   display: flex;
-  justify-content: cneter;
+  justify-content: center;
+  align-items: center;
 }
+
+.SocialLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.SocialLinks a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;  /* color of the links */
+  margin: 0 10px;
+  font-size: 35px;
+  transition: color 0.3s ease;
+}
+
+.SocialLinks a:hover {
+  color: var(--primary);  /* color of the links on hover */
+}
+
+.SocialLinks svg {
+  margin-right: 5px;
+}
+
+.Comments {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #414833;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Comments label {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.Comments input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Comments button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Comments button:hover {
+  background-color: #45a049;
+}
+
+.Comments > div {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #37412e;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.NameComments, .MessageComments {
+  font-size: 20px;
+  margin-bottom: -50px;
+}
+
+.Comments h1 {
+  font-size: 18px;
+}
+
+.Comments p {
+  font-size: 16px;
+}
+
+.Comments button {
+  background-color: #ff5252;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Comments button:hover {
+  background-color: #ff3030;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 
-}
+  .SocialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SocialLinks a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
 
 }

@@ -1,0 +1,19 @@
+:root {
+    --text: #f4f2f0;
+    --background: #1e1e1e;
+    --primary: #7f8760;
+    --secondary: #656d4a;
+    --accent: #414833;
+    --secondaryaccent: #57604e;
+  }
+
+  .Frames {
+    align-items: center;
+  }
+
+  .PlagueInfo {
+    color: #f4f2f0;
+    padding: 50px;
+    background-color: var(--accent);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }

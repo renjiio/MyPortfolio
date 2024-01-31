@@ -8,13 +8,14 @@
   font-family: 'Source Code Pro', monospace;
 }
 
+
 :root{
   --text: #f4f2f0;
-  --background: #c2c5aa;
-  --primary: #a4ac86;
+  --background: #1e1e1e;
+  --primary: #7f8760;
   --secondary: #656d4a;
   --accent: #414833;
-  --secondaryaccent: #333d29;
+  --secondaryaccent: #57604e;
 }
 
 header {
@@ -39,7 +40,7 @@ nav a:hover{
 
 header .nav-btn {
   padding: 5px;
-  cursour: pointer;
+  cursor: pointer;
   background:transparent;
   border: none;
   outline: none;
@@ -71,7 +72,8 @@ header .nav-btn {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: var(--primary);
+    background-color: var(--accent);
+    opacity: 0.95;
     transition: 1s;
     transform: translateY(-100vh);
   }
